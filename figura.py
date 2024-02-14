@@ -15,4 +15,5 @@ class Circulo:
 
     def calcular_area(self) -> float:
         return math.pi * self.radio ** 2
-    def dentro
+    def contiene(self, punto: Punto) -> bool:
+        (punto.x - self.centro.x) ** 2  + (punto.y - self.centro.y) ** 2 <= self.radio ** 2
